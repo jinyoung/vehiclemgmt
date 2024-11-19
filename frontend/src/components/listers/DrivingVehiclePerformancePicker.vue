@@ -44,6 +44,12 @@
                             <v-list-item-subtitle>
                                 AccumulatedDistanceAfter :  {{item.accumulatedDistanceAfter }}
                             </v-list-item-subtitle>
+                            <v-list-item-subtitle>
+                                DrivingDistance :  {{item.drivingDistance }}
+                            </v-list-item-subtitle>
+                            <v-list-item-subtitle>
+                                Purpose :  {{item.purpose }}
+                            </v-list-item-subtitle>
                         </v-list-item-content>
 
                         <v-list-item-action>
@@ -95,6 +101,10 @@
                 if(val != undefined) {
                     var arr = this.list[val]._links.self.href.split('/');
                     obj['registrationId'] = arr[4]; 
+                    
+                    
+                    
+                    
                     
                     
                     

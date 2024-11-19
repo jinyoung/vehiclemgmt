@@ -6,6 +6,7 @@ import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
 import vehiclemgmt.DrivingApplication;
+import vehiclemgmt.domain.DrivingLogRegistered;
 import vehiclemgmt.domain.PerformanceDeleted;
 import vehiclemgmt.domain.PerformanceModified;
 import vehiclemgmt.domain.PerformanceRegistered;
@@ -39,6 +40,12 @@ public class VehiclePerformance {
     @Embedded
     private int accumulatedDistanceAfter;
 
+    @Embedded
+    private int drivingDistance;
+
+    @Embedded
+    private Purpose purpose;
+
     @PostPersist
     public void onPostPersist() {
         PerformanceRegistered performanceRegistered = new PerformanceRegistered(
@@ -51,6 +58,11 @@ public class VehiclePerformance {
 
         PerformanceDeleted performanceDeleted = new PerformanceDeleted(this);
         performanceDeleted.publishAfterCommit();
+
+        DrivingLogRegistered drivingLogRegistered = new DrivingLogRegistered(
+            this
+        );
+        drivingLogRegistered.publishAfterCommit();
     }
 
     @PrePersist

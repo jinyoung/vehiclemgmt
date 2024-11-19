@@ -50,6 +50,8 @@
                             
                             
                             
+                            
+                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
@@ -63,6 +65,8 @@
                             [ Destination :  {{data.destination }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ ArrivalTime :  {{data.arrivalTime }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ AccumulatedDistanceAfter :  {{data.accumulatedDistanceAfter }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ DrivingDistance :  {{data.drivingDistance }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            [ Purpose :  {{data.purpose }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         </v-list-item-subtitle>
 
                     </v-list-item-content>
@@ -140,6 +144,8 @@
                 'destination': '',
                 'arrivalTime': '',
                 'accumulatedDistanceAfter': '',
+                'drivingDistance': '',
+                'purpose': '',
             }
         },
         methods: {

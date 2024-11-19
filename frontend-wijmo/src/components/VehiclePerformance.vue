@@ -10,6 +10,8 @@
         <String label="도착시간" v-model="value.arrivalTime" :editMode="editMode"/>
         <Number offline label="운행전 누적 km" v-model="value.accumulatedDistanceBefore" :editMode="editMode" @change="change"/>
         <Number offline label="운행 후 누적 km" v-model="value.accumulatedDistanceAfter" :editMode="editMode" @change="change"/>
+        <Number offline label="DrivingDistance" v-model="value.drivingDistance" :editMode="editMode" @change="change"/>
+        <Purpose offline label="Purpose" v-model="value.purpose" :editMode="editMode" @change="change"/>
 
         <v-divider class="border-opacity-100 my-divider"></v-divider>
         <v-layout row justify-end>

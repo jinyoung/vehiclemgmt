@@ -76,6 +76,8 @@
                     { text: "destination", value: "destination" },
                     { text: "arrivalTime", value: "arrivalTime" },
                     { text: "accumulatedDistanceAfter", value: "accumulatedDistanceAfter" },
+                    { text: "drivingDistance", value: "drivingDistance" },
+                    { text: "purpose", value: "purpose" },
                 ],
             vehiclePerformance : [],
             newValue: {},
@@ -103,6 +105,8 @@
                 'destination': '',
                 'arrivalTime': '',
                 'accumulatedDistanceAfter': '',
+                'drivingDistance': '',
+                'purpose': '',
             }
         },
         methods: {

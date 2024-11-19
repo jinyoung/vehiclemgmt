@@ -16,6 +16,7 @@
             <String label="Destination" v-model="value.destination" :editMode="editMode"/>
             <String label="ArrivalTime" v-model="value.arrivalTime" :editMode="editMode"/>
             <int offline label="AccumulatedDistanceAfter" v-model="value.accumulatedDistanceAfter" :editMode="editMode" @change="change"/>
+            <Purpose offline label="Purpose" v-model="value.purpose" :editMode="editMode" @change="change"/>
         </v-card-text>
 
         <v-card-actions>
@@ -61,6 +62,7 @@
             this.value.destination = '';
             this.value.arrivalTime = '';
             this.value.accumulatedDistanceAfter = {};
+            this.value.purpose = {};
         },
         watch: {
         },

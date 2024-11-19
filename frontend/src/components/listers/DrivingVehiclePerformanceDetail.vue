@@ -31,6 +31,8 @@
                 <String label="ArrivalTime" v-model="item.arrivalTime" :editMode="editMode" @change="change" />
             </div>
             <int offline label="AccumulatedDistanceAfter" v-model="item.accumulatedDistanceAfter" :editMode="false" :key="false" @change="change" />
+            <int offline label="DrivingDistance" v-model="item.drivingDistance" :editMode="false" :key="false" @change="change" />
+            <Purpose offline label="Purpose" v-model="item.purpose" :editMode="false" :key="false" @change="change" />
         </v-card-text>
 
         <v-card-actions>

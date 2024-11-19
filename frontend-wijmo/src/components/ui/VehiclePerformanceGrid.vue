@@ -45,7 +45,7 @@
             style="margin-top:10px; max-height:65vh;"
             class="wj-felx-grid"
         >
-            <wj-flex-grid-filter :filterColumns="['RowHeader','vehicleNumber','registrationDate','purpose','departure','departureTime','accumulatedDistanceBefore','destination','arrivalTime','accumulatedDistanceAfter',]" />
+            <wj-flex-grid-filter :filterColumns="['RowHeader','vehicleNumber','registrationDate','purpose','departure','departureTime','accumulatedDistanceBefore','destination','arrivalTime','accumulatedDistanceAfter','drivingDistance','purpose',]" />
             <wj-flex-grid-cell-template cellType="RowHeader" v-slot="cell">{{cell.row.index + 1}}</wj-flex-grid-cell-template>
             <wj-flex-grid-column binding="vehicleNumber" header="차량번호" width="2*" :isReadOnly="true" align="center" />
             <wj-flex-grid-column binding="registrationDate" header="등록일자" width="2*" :isReadOnly="true" align="center" />
@@ -56,6 +56,8 @@
             <wj-flex-grid-column binding="destination" header="도착지" width="2*" :isReadOnly="true" align="center" />
             <wj-flex-grid-column binding="arrivalTime" header="도착시간" width="2*" :isReadOnly="true" align="center" />
             <wj-flex-grid-column binding="accumulatedDistanceAfter" header="운행 후 누적 km" width="2*" :isReadOnly="true" align="center" />
+            <wj-flex-grid-column binding="drivingDistance" header="DrivingDistance" width="2*" :isReadOnly="true" align="center" />
+            <wj-flex-grid-column binding="purpose" header="Purpose" width="2*" :isReadOnly="true" align="center" />
         </wj-flex-grid>
         <v-col>
             <v-dialog

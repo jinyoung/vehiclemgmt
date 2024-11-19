@@ -37,7 +37,7 @@ mvn spring-boot:run
 ```
 - driving
 ```
- http :8088/vehiclePerformances registrationId="registrationId" vehicleNumber="vehicleNumber" registrationDate="registrationDate" purpose="purpose" departure="departure" departureTime="departureTime" accumulatedDistanceBefore="accumulatedDistanceBefore" destination="destination" arrivalTime="arrivalTime" accumulatedDistanceAfter="accumulatedDistanceAfter" 
+ http :8088/vehiclePerformances registrationId="registrationId" vehicleNumber="vehicleNumber" registrationDate="registrationDate" purpose="purpose" departure="departure" departureTime="departureTime" accumulatedDistanceBefore="accumulatedDistanceBefore" destination="destination" arrivalTime="arrivalTime" accumulatedDistanceAfter="accumulatedDistanceAfter" drivingDistance="drivingDistance" purpose="purpose" 
 ```
 
 
