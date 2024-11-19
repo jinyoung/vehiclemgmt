@@ -46,6 +46,17 @@
                     </v-list-item>
 
 
+                    <v-list-item
+                        class="px-2"
+                        key="vehiclePerformances"
+                        to="/drivings/vehiclePerformances"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        운행 실적
+                    </v-list-item>
+
 
                 </v-list>
             </v-navigation-drawer>
@@ -134,6 +145,13 @@ export default {
 신청현황 화면에는 등록자가 등록한 신청내용의 모든 기록이 조회되는 화면이야. 신청현황 화면에는 조회를 위한 필터로 조회구분, 진행단계가 있어. 조회구분은 결재일, 신청일, 운행일을 dropdown menu로 선택할 수 있고, from~to date를 선택할 수 있어. from~to date는 YYYY.MM.DD 형식이고, 캘린더 아이콘을 눌렀을 시 달력이 나타나고, 선택된 날짜가 from~to date로 선택되어 조회되는 구조야. 진행단계는 전체, 접수, 반려, 배차완료가 dropdown memu로 조회되어야 해. 선택된 조회 필터 값들을 조회 버튼을 눌러 조회하면 테이블 형태로 기존 신청내용이 조회가 되고, 테이블은 번호, 운행목적, 소속, 이름, 직번, 직능자격, 운행일, 신청일, 결재일, 진행단계 컬럼이 있어. 개별 신청 내용은 팝업 형태로 조회될 수 있어야 하고, 조회된 팝업화면에는 수정, 신청취소, 인쇄 버튼이 있어야 해. 수정 버튼을 누르면 진행단계 &#x27;접수&#x27;에서는 배차신청 내용이 수정될 수 있어야 해. 신청취소 버튼을 누르면 진행단계 &#x27;접수&#x27;에서 &#x27;배차취소&#x27; 단계로 변경되어야 해. 인쇄 버튼을 누르면 팝업 화면이 출력될 수 있어야 해.', 
                 key: 'carAssignments', 
                 route: '/assigns/carAssignments',
+                ImageUrl: '',
+            },
+            { 
+                title: '운행 실적', 
+                description: '운행 실적을 저장하고 조회하는 기능을 제공합니다', 
+                key: 'vehiclePerformances', 
+                route: '/drivings/vehiclePerformances',
                 ImageUrl: '',
             },
             

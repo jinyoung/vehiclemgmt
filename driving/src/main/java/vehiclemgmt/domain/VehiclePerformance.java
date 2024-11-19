@@ -6,6 +6,9 @@ import java.util.List;
 import javax.persistence.*;
 import lombok.Data;
 import vehiclemgmt.DrivingApplication;
+import vehiclemgmt.domain.PerformanceDeleted;
+import vehiclemgmt.domain.PerformanceModified;
+import vehiclemgmt.domain.PerformanceRegistered;
 
 @Entity
 @Table(name = "VehiclePerformance_table")
@@ -35,6 +38,23 @@ public class VehiclePerformance {
 
     @Embedded
     private int accumulatedDistanceAfter;
+
+    @PostPersist
+    public void onPostPersist() {
+        PerformanceRegistered performanceRegistered = new PerformanceRegistered(
+            this
+        );
+        performanceRegistered.publishAfterCommit();
+
+        PerformanceModified performanceModified = new PerformanceModified(this);
+        performanceModified.publishAfterCommit();
+
+        PerformanceDeleted performanceDeleted = new PerformanceDeleted(this);
+        performanceDeleted.publishAfterCommit();
+    }
+
+    @PrePersist
+    public void onPrePersist() {}
 
     public static VehiclePerformanceRepository repository() {
         VehiclePerformanceRepository vehiclePerformanceRepository = DrivingApplication.applicationContext.getBean(

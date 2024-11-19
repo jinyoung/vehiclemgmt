@@ -7,6 +7,7 @@ Vue.use(Router);
 
 import CarAssignmentManager from "./components/ui/CarAssignmentGrid"
 
+import VehiclePerformanceManager from "./components/ui/VehiclePerformanceGrid"
 
 
 export default new Router({
@@ -19,6 +20,11 @@ export default new Router({
                 component: CarAssignmentManager
             },
 
+            {
+                path: '/vehiclePerformances',
+                name: 'VehiclePerformanceManager',
+                component: VehiclePerformanceManager
+            },
 
 
 

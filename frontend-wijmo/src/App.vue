@@ -128,6 +128,7 @@ export default {
             },
             { id: 'driving', title: '운행',
                 items: [
+                    { key: 'vehiclePerformances', url: '/vehiclePerformances', name: '운행 실적' },
                 ]
             },
         ],
@@ -135,6 +136,10 @@ export default {
             {
                 text: "CarAssignment",
                 link: "/carAssignments",
+            },
+            {
+                text: "운행 실적",
+                link: "/vehiclePerformances",
             },
         ],
         activeMenu: null

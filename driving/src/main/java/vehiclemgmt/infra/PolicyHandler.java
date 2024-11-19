@@ -17,6 +17,9 @@ import vehiclemgmt.domain.*;
 @Transactional
 public class PolicyHandler {
 
+    @Autowired
+    VehiclePerformanceRepository vehiclePerformanceRepository;
+
     @StreamListener(KafkaProcessor.INPUT)
     public void whatever(@Payload String eventString) {}
 }
