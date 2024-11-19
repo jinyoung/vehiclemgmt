@@ -20,7 +20,7 @@ public class VehiclePerformanceController {
     @Autowired
     VehiclePerformanceRepository vehiclePerformanceRepository;
 
-    @RequestMapping(value = "/vehiclePerformances/{id}/modfiyevent",
+    @RequestMapping(value = "/vehiclePerformances/{id}/modifyperformance",
         method = RequestMethod.PUT,
         produces = "application/json;charset=UTF-8")
     public VehiclePerformance modifyPerformance(@PathVariable(value = "id")  id, @RequestBody ModifyPerformanceCommand modifyPerformanceCommand, HttpServletRequest request, HttpServletResponse response) throws Exception {
