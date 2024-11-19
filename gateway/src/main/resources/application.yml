@@ -16,7 +16,7 @@ spring:
         - id: driving
           uri: http://localhost:8083
           predicates:
-            - Path=, 
+            - Path=/vehiclePerformances/**, 
         - id: frontend
           uri: http://localhost:8080
           predicates:
@@ -48,7 +48,7 @@ spring:
         - id: driving
           uri: http://driving:8080
           predicates:
-            - Path=, 
+            - Path=/vehiclePerformances/**, 
         - id: frontend
           uri: http://frontend:8080
           predicates:

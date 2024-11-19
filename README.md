@@ -36,6 +36,7 @@ mvn spring-boot:run
  http :8088/carAssignments requesterName="requesterName" organization="organization" employeeNumber="employeeNumber" officeNumber="officeNumber" mobileNumber="mobileNumber" requestDate="2024-11-30" approverInfo="approverInfo" approverPosition="approverPosition" usagePurpose="usagePurpose" numberOfPassengers="numberOfPassengers" operationPeriod="operationPeriod" routeSetting="routeSetting" remarks="remarks" passengerContact="passengerContact" attachedDocuments="attachedDocuments" cancellationReason="cancellationReason" usageCategory="ExternalActivity"```
 - driving
 ```
+ http :8088/vehiclePerformances registrationId="registrationId" vehicleNumber="vehicleNumber" registrationDate="registrationDate" purpose="purpose" departure="departure" departureTime="departureTime" accumulatedDistanceBefore="accumulatedDistanceBefore" destination="destination" arrivalTime="arrivalTime" accumulatedDistanceAfter="accumulatedDistanceAfter" 
 ```
 
 

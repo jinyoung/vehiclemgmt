@@ -46,6 +46,17 @@
                     </v-list-item>
 
 
+                    <v-list-item
+                        class="px-2"
+                        key="vehiclePerformances"
+                        to="/drivings/vehiclePerformances"
+                        @click="changeUrl()"
+                        color="primary"
+                        style="font-weight:700;"
+                    >
+                        운행 실적
+                    </v-list-item>
+
 
                 </v-list>
             </v-navigation-drawer>
@@ -130,6 +141,13 @@ export default {
                 description: '차를 assign 받기 위한 배차신청', 
                 key: 'carAssignments', 
                 route: '/assigns/carAssignments',
+                ImageUrl: '',
+            },
+            { 
+                title: '운행 실적', 
+                description: '운행 실적을 저장하고 조회하는 기능을 제공합니다', 
+                key: 'vehiclePerformances', 
+                route: '/drivings/vehiclePerformances',
                 ImageUrl: '',
             },
             

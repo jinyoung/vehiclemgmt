@@ -52,6 +52,7 @@ const pluralCaseList = []
 
 pluralCaseList.push( {plural: "carAssignments", pascal: "CarAssignment"} )
 
+pluralCaseList.push( {plural: "vehiclePerformances", pascal: "VehiclePerformance"} )
 
 
 Vue.prototype.$ManagerLists.forEach(function(item, idx) {
