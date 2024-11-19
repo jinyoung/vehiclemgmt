@@ -127,7 +127,7 @@ export default {
         aggregate: [
             { 
                 title: 'CarAssignment', 
-                description: '차를 assign 받기 위해 &#x27;배차신청&#x27; 화면', 
+                description: '차를 assign 받기 위한 배차신청', 
                 key: 'carAssignments', 
                 route: '/assigns/carAssignments',
                 ImageUrl: '',
