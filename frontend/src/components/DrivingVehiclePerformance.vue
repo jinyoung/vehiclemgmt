@@ -225,7 +225,7 @@
             async modifyPerformance(params) {
                 try {
                     if(!this.offline) {
-                        var temp = await axios.put(axios.fixUrl(this.value._links['modfiyevent'].href), params)
+                        var temp = await axios.put(axios.fixUrl(this.value._links['modifyperformance'].href), params)
                         for(var k in temp.data) {
                             this.value[k]=temp.data[k];
                         }

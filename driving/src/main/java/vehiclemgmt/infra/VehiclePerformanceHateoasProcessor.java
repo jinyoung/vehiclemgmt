@@ -16,8 +16,11 @@ public class VehiclePerformanceHateoasProcessor
     ) {
         model.add(
             Link
-                .of(model.getRequiredLink("self").getHref() + "/modfiyevent")
-                .withRel("modfiyevent")
+                .of(
+                    model.getRequiredLink("self").getHref() +
+                    "/modifyperformance"
+                )
+                .withRel("modifyperformance")
         );
 
         return model;
