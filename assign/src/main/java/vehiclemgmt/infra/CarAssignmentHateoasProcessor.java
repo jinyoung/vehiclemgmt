@@ -14,9 +14,9 @@ public class CarAssignmentHateoasProcessor
     public EntityModel<CarAssignment> process(
         EntityModel<CarAssignment> model
     ) {
-        model.add(
-            Link.of(model.getRequiredLink("self").getHref() + "/").withRel("")
-        );
+        // model.add(
+        //     Link.of(model.getRequiredLink("self").getHref() + "/").withRel("")
+        // );
 
         return model;
     }

@@ -23,7 +23,7 @@ public class VehiclePerformanceController {
     @RequestMapping(value = "/vehiclePerformances/{id}/modfiyevent",
         method = RequestMethod.PUT,
         produces = "application/json;charset=UTF-8")
-    public VehiclePerformance modifyPerformance(@PathVariable(value = "id")  id, @RequestBody ModifyPerformanceCommand modifyPerformanceCommand, HttpServletRequest request, HttpServletResponse response) throws Exception {
+    public VehiclePerformance modifyPerformance(@PathVariable(value = "id") String id, @RequestBody ModifyPerformanceCommand modifyPerformanceCommand, HttpServletRequest request, HttpServletResponse response) throws Exception {
             System.out.println("##### /vehiclePerformance/modifyPerformance  called #####");
             Optional<VehiclePerformance> optionalVehiclePerformance = vehiclePerformanceRepository.findById(id);
             

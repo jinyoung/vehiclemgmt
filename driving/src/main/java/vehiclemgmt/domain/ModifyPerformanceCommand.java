@@ -9,7 +9,7 @@ public class ModifyPerformanceCommand {
 
     private String registrationId;
     private String vehicleNumber;
-    private date registrationDate;
+    private Date registrationDate;
     private String purpose;
     private String departure;
     private String departureTime;

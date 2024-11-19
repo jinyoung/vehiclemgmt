@@ -26,14 +26,12 @@ public class VehiclePerformance {
 
     private String departureTime;
 
-    @Embedded
     private int accumulatedDistanceBefore;
 
     private String destination;
 
     private String arrivalTime;
 
-    @Embedded
     private int accumulatedDistanceAfter;
 
     public static VehiclePerformanceRepository repository() {
