@@ -39,28 +39,13 @@
                                 ApproverPosition :  {{item.approverPosition }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                UsageCategory :  {{item.usageCategory }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
                                 UsagePurpose :  {{item.usagePurpose }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
-                                OperationSection :  {{item.operationSection }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
-                                MainDepartment :  {{item.mainDepartment }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
                                 NumberOfPassengers :  {{item.numberOfPassengers }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
-                                CarType :  {{item.carType }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
                                 OperationPeriod :  {{item.operationPeriod }}
-                            </v-list-item-subtitle>
-                            <v-list-item-subtitle>
-                                IncludeDriver :  {{item.includeDriver }}
                             </v-list-item-subtitle>
                             <v-list-item-subtitle>
                                 RouteSetting :  {{item.routeSetting }}
@@ -149,16 +134,6 @@
                 if(val != undefined) {
                     var arr = this.list[val]._links.self.href.split('/');
                     obj['id'] = arr[4]; 
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
                     
                     
                     

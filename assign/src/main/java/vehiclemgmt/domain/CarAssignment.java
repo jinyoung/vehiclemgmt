@@ -34,21 +34,11 @@ public class CarAssignment {
 
     private String approverPosition;
 
-    private String usageCategory;
-
     private String usagePurpose;
-
-    private String operationSection;
-
-    private String mainDepartment;
 
     private String numberOfPassengers;
 
-    private String carType;
-
     private String operationPeriod;
-
-    private String includeDriver;
 
     private String routeSetting;
 

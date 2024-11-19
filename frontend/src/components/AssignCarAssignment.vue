@@ -24,14 +24,9 @@
             <Date label="RequestDate" v-model="value.requestDate" :editMode="editMode" :inputUI="''"/>
             <String label="ApproverInfo" v-model="value.approverInfo" :editMode="editMode" :inputUI="''"/>
             <String label="ApproverPosition" v-model="value.approverPosition" :editMode="editMode" :inputUI="''"/>
-            <String label="UsageCategory" v-model="value.usageCategory" :editMode="editMode" :inputUI="''"/>
             <String label="UsagePurpose" v-model="value.usagePurpose" :editMode="editMode" :inputUI="''"/>
-            <String label="OperationSection" v-model="value.operationSection" :editMode="editMode" :inputUI="''"/>
-            <String label="MainDepartment" v-model="value.mainDepartment" :editMode="editMode" :inputUI="''"/>
             <String label="NumberOfPassengers" v-model="value.numberOfPassengers" :editMode="editMode" :inputUI="''"/>
-            <String label="CarType" v-model="value.carType" :editMode="editMode" :inputUI="''"/>
             <String label="OperationPeriod" v-model="value.operationPeriod" :editMode="editMode" :inputUI="''"/>
-            <String label="IncludeDriver" v-model="value.includeDriver" :editMode="editMode" :inputUI="''"/>
             <String label="RouteSetting" v-model="value.routeSetting" :editMode="editMode" :inputUI="''"/>
             <String label="Remarks" v-model="value.remarks" :editMode="editMode" :inputUI="''"/>
             <String label="PassengerContact" v-model="value.passengerContact" :editMode="editMode" :inputUI="''"/>

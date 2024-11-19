@@ -30,28 +30,13 @@
                 <String label="ApproverPosition" v-model="item.approverPosition" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="UsageCategory" v-model="item.usageCategory" :editMode="editMode" @change="change" />
-            </div>
-            <div>
                 <String label="UsagePurpose" v-model="item.usagePurpose" :editMode="editMode" @change="change" />
-            </div>
-            <div>
-                <String label="OperationSection" v-model="item.operationSection" :editMode="editMode" @change="change" />
-            </div>
-            <div>
-                <String label="MainDepartment" v-model="item.mainDepartment" :editMode="editMode" @change="change" />
             </div>
             <div>
                 <String label="NumberOfPassengers" v-model="item.numberOfPassengers" :editMode="editMode" @change="change" />
             </div>
             <div>
-                <String label="CarType" v-model="item.carType" :editMode="editMode" @change="change" />
-            </div>
-            <div>
                 <String label="OperationPeriod" v-model="item.operationPeriod" :editMode="editMode" @change="change" />
-            </div>
-            <div>
-                <String label="IncludeDriver" v-model="item.includeDriver" :editMode="editMode" @change="change" />
             </div>
             <div>
                 <String label="RouteSetting" v-model="item.routeSetting" :editMode="editMode" @change="change" />

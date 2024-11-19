@@ -33,7 +33,7 @@ mvn spring-boot:run
 ## Test by API
 - assign
 ```
- http :8088/carAssignments id="id" requesterName="requesterName" organization="organization" employeeNumber="employeeNumber" officeNumber="officeNumber" mobileNumber="mobileNumber" requestDate="requestDate" approverInfo="approverInfo" approverPosition="approverPosition" usageCategory="usageCategory" usagePurpose="usagePurpose" operationSection="operationSection" mainDepartment="mainDepartment" numberOfPassengers="numberOfPassengers" carType="carType" operationPeriod="operationPeriod" includeDriver="includeDriver" routeSetting="routeSetting" remarks="remarks" passengerContact="passengerContact" attachedDocuments="attachedDocuments" cancellationReason="cancellationReason" usageCategory="usageCategory" carType="carType" mainDepartment="mainDepartment" operationSection="operationSection" operationType="operationType" includeDriver="includeDriver" progressStage="progressStage" 
+ http :8088/carAssignments id="id" requesterName="requesterName" organization="organization" employeeNumber="employeeNumber" officeNumber="officeNumber" mobileNumber="mobileNumber" requestDate="requestDate" approverInfo="approverInfo" approverPosition="approverPosition" usagePurpose="usagePurpose" numberOfPassengers="numberOfPassengers" operationPeriod="operationPeriod" routeSetting="routeSetting" remarks="remarks" passengerContact="passengerContact" attachedDocuments="attachedDocuments" cancellationReason="cancellationReason" usageCategory="usageCategory" carType="carType" mainDepartment="mainDepartment" operationSection="operationSection" operationType="operationType" includeDriver="includeDriver" progressStage="progressStage" 
 ```
 - driving
 ```

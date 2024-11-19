@@ -64,11 +64,6 @@
                             
                             
                             
-                            
-                            
-                            
-                            
-                            
                         </v-list-item-title>
 
                         <v-list-item-subtitle style="font-size:25px; font-weight:700;">
@@ -81,14 +76,9 @@
                             [ RequestDate :  {{data.requestDate }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ ApproverInfo :  {{data.approverInfo }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ ApproverPosition :  {{data.approverPosition }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ UsageCategory :  {{data.usageCategory }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ UsagePurpose :  {{data.usagePurpose }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ OperationSection :  {{data.operationSection }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ MainDepartment :  {{data.mainDepartment }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ NumberOfPassengers :  {{data.numberOfPassengers }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ CarType :  {{data.carType }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ OperationPeriod :  {{data.operationPeriod }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                            [ IncludeDriver :  {{data.includeDriver }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ RouteSetting :  {{data.routeSetting }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ Remarks :  {{data.remarks }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                             [ PassengerContact :  {{data.passengerContact }} ] &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -176,14 +166,9 @@
                 'requestDate': '2024-11-19',
                 'approverInfo': '',
                 'approverPosition': '',
-                'usageCategory': '',
                 'usagePurpose': '',
-                'operationSection': '',
-                'mainDepartment': '',
                 'numberOfPassengers': '',
-                'carType': '',
                 'operationPeriod': '',
-                'includeDriver': '',
                 'routeSetting': '',
                 'remarks': '',
                 'passengerContact': '',
