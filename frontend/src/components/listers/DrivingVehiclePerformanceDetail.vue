@@ -11,7 +11,9 @@
             <div>
                 <String label="VehicleNumber" v-model="item.vehicleNumber" :editMode="editMode" @change="change" />
             </div>
-            <date offline label="RegistrationDate" v-model="item.registrationDate" :editMode="false" :key="false" @change="change" />
+            <div>
+                <Date label="RegistrationDate" v-model="item.registrationDate" :editMode="editMode" @change="change" />
+            </div>
             <div>
                 <String label="Purpose" v-model="item.purpose" :editMode="editMode" @change="change" />
             </div>

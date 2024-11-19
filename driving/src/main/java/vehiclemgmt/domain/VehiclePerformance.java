@@ -18,8 +18,7 @@ public class VehiclePerformance {
 
     private String vehicleNumber;
 
-    @Embedded
-    private date registrationDate;
+    private Date registrationDate;
 
     private String purpose;
 

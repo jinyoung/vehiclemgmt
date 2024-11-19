@@ -18,7 +18,7 @@
         <v-card-text style="background-color: white;">
             <String v-if="editMode" label="등록자 정보" v-model="value.registrationId" :editMode="editMode" :inputUI="'TEXT'"/>
             <String label="차량번호" v-model="value.vehicleNumber" :editMode="editMode" :inputUI="'SELECT'"/>
-            <date offline label="등록일자" v-model="value.registrationDate" :editMode="editMode" @change="change"/>
+            <Date label="등록일자" v-model="value.registrationDate" :editMode="editMode" :inputUI="''"/>
             <String label="운행목적" v-model="value.purpose" :editMode="editMode" :inputUI="'SELECT'"/>
             <String label="출발지" v-model="value.departure" :editMode="editMode" :inputUI="'TEXT'"/>
             <String label="출발시간" v-model="value.departureTime" :editMode="editMode" :inputUI="'TEXT'"/>

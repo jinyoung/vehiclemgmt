@@ -106,7 +106,7 @@
             me.newValue = {
                 'registrationId': '',
                 'vehicleNumber': '',
-                'registrationDate': '',
+                'registrationDate': '2024-11-19',
                 'purpose': '',
                 'departure': '',
                 'departureTime': '',
